@@ -6,15 +6,6 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [];
-let data = {
-    projectTitle: "",
-    description: "",
-    installInstructions: "",
-    usageInfo: "",
-    license: "",
-    conGuidelines: "",
-    testInstructions: ""
-};
 
 function collectData() {
     inquirer.prompt([
@@ -54,15 +45,21 @@ function collectData() {
             message: "Please enter testing instructions:",
             name: "testInstructions"
         },
+        {
+            type: "input",
+            message: "What is your GitHub username:",
+            name: "github"
+        },
+        {
+            type: "input",
+            message: "What is your contact email address:",
+            name: "email"
+        },
     ]).then((response) => {
-        data.projectTitle = response.projectTitle
-        data.description = response.description
-        data.installInstructions = response.installInstructions
-        data.usageInfo = response.usageInfo
-        data.license = response.license
-        data.conGuidelines = response.conGuidelines
-        data.testInstructions = response.testInstructions
-        writeToFile('README.md', data);
+        for (q in response){
+            questions[q] = response[q]
+        };
+        writeToFile('README.md', questions);
     })
 };
 

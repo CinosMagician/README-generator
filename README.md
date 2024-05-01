@@ -1,33 +1,41 @@
 
-# Test README Generator
+# asd
 
-
+![badge](https://img.shields.io/badge/License-Boost_1.0-blue.svg)
 
 ## Description
 
-This is a test to have a README.md file generated and populated using js
+asd
 
 ## Table of Contents
 - [Installation](#installation-instructions)
 - [Usage](#usage-info)
-
+- [License](#license)
 - [Contributions](#contributions)
 - [Test](#testing-instructions)
 
 ## Installation Instructions
 
-Simply install and run in terminal
+asd
     
 ## Usage Info
 
-Its use is so that you don't have to format your own README.md file and can just input the raw text you desire
+asd
 
-
+## License
+    This application is covered by the Boost_1.0 license.
 
 ## Contributions
 
-None
+asd
 
 ## Testing Instructions
     
-open the terminal and enter node index.js
+asd
+
+## Questions
+
+If you wish to see any of my other works,
+here is a link to my GitHub Page: [asd](https://github.com/asd)
+
+If you wish to contact me directly, please email me: asd
