@@ -1,6 +1,5 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-// const colors = require('colors');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
@@ -33,7 +32,7 @@ function collectData() {
             type: "list",
             message: "Please choose the license you are using? (Select 'None' for no license):",
             name: "license",
-            choices: ["Apache_2.0", "GPLv3", "MIT", "BSD_2--Clause", "BSD_3--Clause", "Boost_1.0", "CC0_1.0", "EPL_1.0", "AGPL_v3", "GPL_v2", "LGPL_v2.1", "MPL_2.0", "Unlicense", "None"]
+            choices: ["Apache 2.0", "GPLv3", "MIT", "BSD 2--Clause", "BSD 3--Clause", "Boost 1.0", "CC0 1.0", "EPL 1.0", "AGPL v3", "GPL v2", "LGPL v2.1", "MPL 2.0", "Unlicense", "None"]
         },
         {
             type: "input",
